@@ -1,1 +1,6 @@
 # Medical-Image-Processing---Xilinx-Nexys-A7
+
+# Abstract
+In our project, we want to present a real-time, FPGA-based medical image enhancement and segmentation demo on the Nexys-A7 100T. From Kaggle and other free, open-source medical imaging dataset sites, we will use pre-converted 8-bit grayscale chest and knee radiographs. The plan is to load them from the on-board microSD port into DDR2 and stream it at 640x480 at 60 Hz to the board’s 12-bit VGA output. A line buffered, fixed-point pipeline will perform LUT mapping, 3x3 Gaussian smoothing, unsharp masking, Sobel edge extraction, and adaptive thresholding via Otsu, followed by an optional 3x3 morphological cleanup. Interactively, we would like to use switches to select overlays and re-compute thresholds, and perhaps UART output for parameters.
+All image-processing stages are planned to be written in Verilog. Each stage we plan on comparing our results to a “golden-model”. In other words, our VGA output image versus Python/OpenCV (likely using HuggingFace & PyTorch). We will be using Xilinx MIG for DDR access and an SPI microSD controller for file I/O. We will reference the Nexys A7 reference for hardware integration (VGA, SD, DDR2), and histogram techniques to justify algorithmic choices and complexity limits.
+
