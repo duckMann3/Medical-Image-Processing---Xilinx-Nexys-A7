@@ -1,0 +1,2 @@
+# Resources on How to Use VGA on Nexys-A7 100T
+* [Blog - Joel Svensson: Trying to do some VGA graphics with the Artix-7 FPGA (Nexys-A7 100T)](https://svenssonjoel.github.io/pages/nexys-a7-vga/index.html)
