@@ -26,3 +26,5 @@ There are three key parts to the symmetric model:
 
 ### Resources:
 - https://www.geeksforgeeks.org/machine-learning/u-net-architecture-explained/
+- https://pyimagesearch.com/2022/02/21/u-net-image-segmentation-in-keras/
+- https://www.digitalocean.com/community/tutorials/unet-architecture-image-segmentation
