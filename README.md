@@ -6,10 +6,15 @@ All image-processing stages are planned to be written in Verilog. Each stage we 
 
 # Current Repo Structure
 ## Overview
-* docs
-* medical
-* src
-## docs
-> This directory contains 
+* VGA_Development
+* ml
+* notes
+## VGA_Development  
+> This directory contains the module and test bench folders for our VGA controller. So far, it is elementary and only outputs singular colors onto a VGA display monitor. 
+#### VGA_Development_modules
+> top, clock divider, horizontal counter, and vertical counter.
+#### VGA_Development_tb
+> Test Benches for top and clock divider modules.
 ## ml
-## src
+> Jupyter notebook for U-Net model.
+## notes
