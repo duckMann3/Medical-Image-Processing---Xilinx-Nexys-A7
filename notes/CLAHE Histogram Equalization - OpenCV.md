@@ -1,3 +1,4 @@
+# CLAHE Histogram Equalization - OpenCV
 
 Contrast Limited Adaptive Histogram Equalization (CLAHE) is used to improve the contrast of images. In traditional methods, the whole image changes, but CLAHE works by dividing the image into smaller parts and adjusting the contrast separately. This helps in avoiding the image getting too bright or too dark in some areas.
 
