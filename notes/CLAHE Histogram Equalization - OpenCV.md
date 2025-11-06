@@ -1,3 +1,4 @@
+# CLAHE Histogram Equalization - OpenCV
 
 Contrast Limited Adaptive Histogram Equalization (CLAHE) is used to improve the contrast of images. In traditional methods, the whole image changes, but CLAHE works by dividing the image into smaller parts and adjusting the contrast separately. This helps in avoiding the image getting too bright or too dark in some areas.
 
@@ -31,7 +32,13 @@ clahe_img = np.clip(clahe.apply(image_bw) + 30, 0, 255).astype(np.uint8) _, thre
 display_image("CLAHE Image", clahe_img)
 ```
 
+## Otsu Thresholding
+
+Scikit-image has an Otsu filter that we could use to generate our masks for our images. They also have their morphology imports that we can use to make sure our image is cleaned up as much as possible. This will make it easier for our model to segment the images based off of the masks that we give it.
+
 Resources:
 
 - https://www.geeksforgeeks.org/python/clahe-histogram-eqalization-opencv/
 - https://learnopencv.com/otsu-thresholding-with-opencv/
+- https://scikit-image.org/docs/0.23.x/auto_examples/segmentation/plot_thresholding.html
+- https://www.geeksforgeeks.org/python/python-opencv-cv2-imread-method/
