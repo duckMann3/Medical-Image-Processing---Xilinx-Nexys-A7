@@ -9,6 +9,7 @@
 // It's basically all handled through FatFs since it calls low level disk functions that handle the transfer of the image
 // Through SPI and we then read the image as raw data.
 
+// Also you just initialize the SPI header, but the SPI isn't really called within the code since FatFs does it for you.
 
 // Also the files have to be in the root directory of the SD card to be able to read.
 // Also have to handle JPEG to RGB565 conversion externally using Python
