@@ -1,4 +1,4 @@
-can i just run this code: /*
+/*
  * sd_card.c
  *
  *  Created on: Nov 30, 2025
